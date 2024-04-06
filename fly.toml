@@ -1,4 +1,9 @@
-app = 'poe-video-maker'
+# fly.toml app configuration file generated for poe-video-maker-sfpoehackathon on 2024-04-06T14:26:09-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'poe-video-maker-sfpoehackathon'
 primary_region = 'lax'
 
 [build]
