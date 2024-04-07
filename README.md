@@ -4,6 +4,52 @@
 ## Overview
 The Ultimate Basketball Motivation Coach combines the power of advanced AI models to inspire and guide young basketball enthusiasts. Utilizing imagery evocative of basketball legends like Michael Jordan, Kobe Bryant, LeBron James, and Larry Bird, alongside personalized motivational text, our system engages young athletes in a unique way. This project harnesses LoRA-enabled Stable Diffusion (SDXL) for creating dynamic, motivational images and Anthropic's Claude-3 Opus for generating safe, bias-mitigated textual content. It generates a motivational story. 
 
+```
+  User Input
+      │
+      ▼
++-------------+        +---------------------+
+| Prompt      |------->| LoRA SDXL Model     |
+| System      |        | Image Generation    |
++-------------+        +---------------------+
+      │                         │
+      │                         ▼
+      │                +---------------------+
+      ├----------------| Embeddings & LoRA   |
+      │                | Parameters Applied  |
+      │                +---------------------+
+      │                         │
+      │                         ▼
+      │                +---------------------+
+      │                | SDXL Phantom Fine   |
+      │                | Tuned Model         |
+      │                +---------------------+
+      │                         │
+      │                         ▼
+      │                +---------------------+
+      │                | Image Output for    |
+      │                | Motivation Coach    |
+      │                +---------------------+
+      │
+      ▼
++-------------+        +---------------------+
+| Prompt      |------->| Claude-3 Opus Model |
+| System      |        | Text Generation     |
++-------------+        +---------------------+
+      │                         │
+      │                         ▼
+      │                +---------------------+
+      │                | Safe, Bias-Mitigated|
+      │                | Motivational Text   |
+      │                +---------------------+
+      │                         │
+      ▼                         ▼
++-------------------------------------------+
+| POE Bot: Collects User Input & Model      |
+| Responses, Optimizes System, Displays     |
+| Motivational Content                      |
++-------------------------------------------+
+```
 ## Project Rationale
 In our quest to create a motivational tool for young athletes, we aimed for a balance between visual inspiration and textual motivation. We chose to fine-tune the SDXL model using LoRA parameters and embeddings derived from images embodying the essence of basketball greatness. This approach allowed us to tailor image outputs for motivational coaching scenarios. 
 
