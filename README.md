@@ -10,30 +10,30 @@ The Ultimate Basketball Motivation Coach combines the power of advanced AI model
       ▼
 +-------------+        +---------------------+
 | Prompt      |------->| LoRA SDXL Model     |
-| System      |        | Image Generation    |
+| System      |        | Image Generation    |  FAL 
 +-------------+        +---------------------+
       │                         │
       │                         ▼
       │                +---------------------+
       ├----------------| Embeddings & LoRA   |
-      │                | Parameters Applied  |
+      │                | Parameters Applied  | FAL 
       │                +---------------------+
       │                         │
       │                         ▼
       │                +---------------------+
       │                | SDXL Phantom Fine   |
-      │                | Tuned Model         |
+      │                | Tuned Model         | FAL
       │                +---------------------+
       │                         │
       │                         ▼
       │                +---------------------+
       │                | Image Output for    |
-      │                | Motivation Coach    |
+      │                | Motivation Coach    | FAL + POE
       │                +---------------------+
       │
       ▼
 +-------------+        +---------------------+
-| Prompt      |------->| Claude-3 Opus Model |
+| Prompt      |------->| Claude-3 Opus Model | ANTHROPIC + POE
 | System      |        | Text Generation     |
 +-------------+        +---------------------+
       │                         │
@@ -47,7 +47,7 @@ The Ultimate Basketball Motivation Coach combines the power of advanced AI model
 +-------------------------------------------+
 | POE Bot: Collects User Input & Model      |
 | Responses, Optimizes System, Displays     |
-| Motivational Content                      |
+| Motivational Content                      | POE 
 +-------------------------------------------+
 ```
 ## Project Rationale
